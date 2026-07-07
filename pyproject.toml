@@ -21,6 +21,10 @@ Issues = "https://github.com/tifrueh/md2anki/issues"
 [project.scripts]
 md2anki = "md2anki:cli.main"
 
+[tool.hatch.build]
+artifacts = ["Documentation/md2anki.1"]
+exclude = ["Documentation/*.md"]
+
 [tool.hatch.version]
 source = "vcs"
 
@@ -29,3 +33,6 @@ version-file = "src/md2anki/_version.py"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/md2anki"]
+
+[tool.hatch.build.hooks.custom]
+path = "scripts/docgen.py"
