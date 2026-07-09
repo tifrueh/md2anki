@@ -72,4 +72,4 @@ TODO
 
 # SEE ALSO
 
-**pandoc**(1), **md2anki.md**(5), **md2anki.al**(5), **md2anki.txt(5)**
+**pandoc**(1), **md2anki.md**(5), **md2anki.al**(5), **md2anki.txt**(5)
