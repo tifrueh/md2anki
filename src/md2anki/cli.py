@@ -105,8 +105,11 @@ def main():
     args = parser.parse_args()
 
     # Initialise logging system.
-    log = logging.getLogger(__name__)
-    logging.basicConfig(level=args.loglevel)
+    log = logging.getLogger(parser.prog)
+    logging.basicConfig(
+        level=args.loglevel,
+        format="%(name)s: %(levelname)s: %(message)s"
+    )
 
     # Log parsed arguments to the debug log.
     log.debug(f"Parsed arguments: {args}")
