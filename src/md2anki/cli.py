@@ -111,6 +111,17 @@ def main():
     # Log parsed arguments to the debug log.
     log.debug(f"Parsed arguments: {args}")
 
+    # Perform some last manual argument validation.
+    if args.convert and len(args.in_file) > 1 and args.output:
+        log.critical(
+            "Cannot set output file if multiple input files were specified."
+        )
+        exit(1)
+    elif args.convert and len(args.header) > 0:
+        log.warning(
+            "Header flag specified for conversion stage, ignoring."
+        )
+
     # Run the correct stage based upon the arguments.
     if args.convert:
         convert(args, log)
