@@ -109,7 +109,7 @@ def main():
     logging.basicConfig(level=args.loglevel)
 
     # Log parsed arguments to the debug log.
-    log.debug(args)
+    log.debug(f"Parsed arguments: {args}")
 
     # Run the correct stage based upon the arguments.
     if args.convert:
