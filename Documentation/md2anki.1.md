@@ -9,9 +9,10 @@ md2anki - convert Markdown notes to Anki notes
 
 # SYNOPSIS
 
-**md2anki** ( **-h** | **-v** )
+| **md2anki** ( **-h** | **-v** )
 
-**md2anki** \[ **-c** | **-l** \] \[ **-o** *OUT_FILE* \] *IN_FILE* ...
+| **md2anki** \[ **-c** | **-l** \] \[ **-L** *LOGLEVEL* \] \[ **-H** *KEY:VALUE* ... \]
+|         \[ **-o** *OUT_FILE* \] *IN_FILE* ...
 
 # DESCRIPTION
 
@@ -40,8 +41,24 @@ one text file that can be imported directly into Anki.
 **-h**, **-\-help**
 : Display the help message.
 
+**-H**, **-\-header** *KEY:VALUE*
+: Set the "`key`" header of the Anki import file produced to "`value`". This
+can, for example, be used to preset a deck name for the notes within via the
+"`deck`" header. Or to set a column from which the deck for the individual notes
+shall be read via the "`deck column`" header. See the Anki documentation for
+reference.
+
+  This option be specified multiple times.
+
+  Note, however, that this option only has an effect if it is supplied for an
+  execution of the program during which the link stage runs.
+
 **-l**, **-\-link**
 : Only run the link stage.
+
+**-L, -\-loglevel** *LOGLEVEL*
+: Set the logging level. Should be one of ( DEBUG | INFO | WARNING | ERROR |
+CRITICAL ).
 
 **-o**, **-\-output**
 : Specify an output file.
