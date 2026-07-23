@@ -6,7 +6,9 @@ def convert(args, log):
         log  -- The logger object with which to produce log messages.
 
     return:
-        None
+        None, but note that this function will modify the 'args.in_file' field
+        to the list of /output/ files it produces, so that a potential link
+        phase can be run directly afterwards on the same 'args' object.
     """
 
     log.info("Running conversion stage …")
