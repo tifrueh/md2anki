@@ -3,7 +3,7 @@ requires = ["hatchling >= 1.26", "hatch-vcs"]
 build-backend = "hatchling.build"
 
 [project]
-name = "md2anki"
+name = "md2atxt"
 dynamic = [ "version" ]
 authors = [
   { name="Timo Früh", email="dev@tifrueh.ch" },
@@ -15,24 +15,24 @@ license = "MIT"
 license-files = ["LICENSE.txt"]
 
 [project.urls]
-Homepage = "https://github.com/tifrueh/md2anki"
-Issues = "https://github.com/tifrueh/md2anki/issues"
+Homepage = "https://github.com/tifrueh/md2atxt"
+Issues = "https://github.com/tifrueh/md2atxt/issues"
 
 [project.scripts]
-md2anki = "md2anki:cli.main"
+md2atxt = "md2atxt:cli.main"
 
 [tool.hatch.build]
-artifacts = ["Documentation/md2anki.1"]
+artifacts = ["Documentation/md2atxt.1"]
 exclude = ["Documentation/*.md"]
 
 [tool.hatch.version]
 source = "vcs"
 
 [tool.hatch.build.hooks.vcs]
-version-file = "src/md2anki/_version.py"
+version-file = "src/md2atxt/_version.py"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/md2anki"]
+packages = ["src/md2atxt"]
 
 [tool.hatch.build.hooks.custom]
 path = "scripts/docgen.py"

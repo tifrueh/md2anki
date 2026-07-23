@@ -1,8 +1,8 @@
 import logging
 import argparse as ap
-from md2anki._version import __version__
-from md2anki.conversion import convert
-from md2anki.link import link
+from md2atxt._version import __version__
+from md2atxt.conversion import convert
+from md2atxt.link import link
 
 
 def initialize_argparse():
@@ -17,9 +17,9 @@ def initialize_argparse():
 
     # Initialise the argument parser.
     parser = ap.ArgumentParser(
-        prog="md2anki",
+        prog="md2atxt",
         description="convert Markdown notes to Anki notes",
-        epilog="For more information, see the md2anki(1) manual page.",
+        epilog="For more information, see the md2atxt(1) manual page.",
         add_help=False,
     )
 

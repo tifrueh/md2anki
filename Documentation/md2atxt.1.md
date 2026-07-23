@@ -1,29 +1,29 @@
 ---
-title: "md2anki"
+title: "md2atxt"
 section: "1"
 ---
 
 # NAME
 
-md2anki - convert Markdown notes to Anki notes
+md2atxt - convert Markdown notes to Anki notes
 
 # SYNOPSIS
 
-| **md2anki** ( **-h** | **-v** )
+| **md2atxt** ( **-h** | **-v** )
 
-| **md2anki** \[ **-c** | **-l** \] \[ **-L** *LOGLEVEL* \] \[ **-H** *KEY:VALUE* ... \]
+| **md2atxt** \[ **-c** | **-l** \] \[ **-L** *LOGLEVEL* \] \[ **-H** *KEY:VALUE* ... \]
 |         \[ **-o** *OUT_FILE* \] *IN_FILE* ...
 
 # DESCRIPTION
 
-**md2anki** is a small program that can be used to convert notes written in
-Markdown (in a format specified in **md2anki.md**(5)) to Anki-importable text
+**md2atxt** is a small program that can be used to convert notes written in
+Markdown (in a format specified in **md2atxt.md**(5)) to Anki-importable text
 files. There are two stages to the conversion, which run in sequence by default
 or can be individually selected using the "**-c**" and "**-l**" flags:
 
 **Conversion Stage**
 : The conversion stage takes in a list of files and converts them individually
-into an intermediary file format (see **md2anki.al**(5)), called an "Anki line"
+into an intermediary file format (see **md2atxt.al**(5)), called an "Anki line"
 file. By default, the naming scheme for the output files is simply to use the
 same name and parent directory as the source file, but to use "al" as file
 extension instead of "md". If only one input file was specified, then the exact
@@ -68,7 +68,7 @@ CRITICAL ).
 
 # NOTES
 
-**md2anki** is managed via GitHub at <https://github.com/tifrueh/md2anki>.
+**md2atxt** is managed via GitHub at <https://github.com/tifrueh/md2atxt>.
 Should you find any bugs, you're very welcome to open an issue over there.
 
 # EXIT STATUS
@@ -89,4 +89,4 @@ TODO
 
 # SEE ALSO
 
-**pandoc**(1), **md2anki.md**(5), **md2anki.al**(5), **md2anki.txt**(5)
+**pandoc**(1), **md2atxt.md**(5), **md2atxt.al**(5), **md2atxt.txt**(5)

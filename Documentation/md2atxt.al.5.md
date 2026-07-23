@@ -1,11 +1,11 @@
 ---
-title: "md2anki.al"
+title: "md2atxt.al"
 section: "5"
 ---
 
 # NAME
 
-md2anki.al - md2anki "al" file format
+md2atxt.al - md2atxt "al" file format
 
 # DESCRIPTION
 
@@ -15,9 +15,9 @@ shall be enclosed by two "`"`" characters, one on each end, with every occurrenc
 of "`"`" within the chunk either being escaped with a second "`"`" character or as
 an HTML entity.
 
-Note that this is also exactly what the conversion stage of **md2anki**(1)
+Note that this is also exactly what the conversion stage of **md2atxt**(1)
 produces, if applied to a correctly formatted Markdown file (see
-**md2anki.md**(5)).
+**md2atxt.md**(5)).
 
 # NOTES
 
@@ -29,7 +29,7 @@ file as described in
 # EXAMPLE
 
 The approximate conversion of the example Markdown file given as example in
-**md2anki.md**(5) would look as follows:
+**md2atxt.md**(5) would look as follows:
 
 ```csv
 "foo";"<h2>What is a bar?</h2>";"<p>A bar is usually a baz.</p>"
@@ -37,4 +37,4 @@ The approximate conversion of the example Markdown file given as example in
 
 # SEE ALSO
 
-**pandoc**(1), **md2anki**(1), **md2anki.md**(5), **md2anki.txt**(5)
+**pandoc**(1), **md2atxt**(1), **md2atxt.md**(5), **md2atxt.txt**(5)

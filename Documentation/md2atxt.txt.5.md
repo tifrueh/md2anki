@@ -1,15 +1,15 @@
 ---
-title: "md2anki.txt"
+title: "md2atxt.txt"
 section: "5"
 ---
 
 # NAME
 
-md2anki.txt - md2anki Anki import file format
+md2atxt.txt - md2atxt Anki import file format
 
 # DESCRIPTION
 
-An Anki import file (of the kind used by **md2anki**(1)) consists of two parts;
+An Anki import file (of the kind used by **md2atxt**(1)) consists of two parts;
 a header and a body.
 
 **Header Format**
@@ -20,7 +20,7 @@ correctly.
 
 **Body Format**
 : The body follows after the header and is a concatenation of one or more Anki
-line files (see **md2anki.al**(5)), separated by a newline character.
+line files (see **md2atxt.al**(5)), separated by a newline character.
 
   Note that while it is not technically incorrect to link Anki line files with
   an inconsistent number of fields into a single Anki import file, doing this is
@@ -28,7 +28,7 @@ line files (see **md2anki.al**(5)), separated by a newline character.
   for reference.
 
 Also note that a file of this format is also exactly what the link stage of
-**md2anki**(1) produces if applied to one or more Anki line files.
+**md2atxt**(1) produces if applied to one or more Anki line files.
 
 # NOTES
 
@@ -39,7 +39,7 @@ For the full documentation of the import file format used by Anki, see
 # EXAMPLE
 
 The approximate Anki import file linked from the Anki line file given as example
-in **md2anki.al**(5) (and another one in interest of a more expressive example)
+in **md2atxt.al**(5) (and another one in interest of a more expressive example)
 would look as follows:
 
 ```csv
@@ -51,4 +51,4 @@ would look as follows:
 
 # SEE ALSO
 
-**pandoc**(1), **md2anki**(1), **md2anki.md**(5), **md2anki.al**(5)
+**pandoc**(1), **md2atxt**(1), **md2atxt.md**(5), **md2atxt.al**(5)

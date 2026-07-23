@@ -1,15 +1,15 @@
 ---
-title: "md2anki.md"
+title: "md2atxt.md"
 section: "5"
 ---
 
 # NAME
 
-md2anki.md - md2anki Markdown file format
+md2atxt.md - md2atxt Markdown file format
 
 # DESCRIPTION
 
-To be used with **md2anki**(1), Markdown files need to adhere to a specific
+To be used with **md2atxt**(1), Markdown files need to adhere to a specific
 format, described in this manual.
 
 Firstly, the file shall include a TOML metadata header, delimited by the
@@ -51,4 +51,4 @@ A bar is usually a baz.
 
 # SEE ALSO
 
-**pandoc**(1), **md2anki**(1), **md2anki.al**(5), **md2anki.txt**(5)
+**pandoc**(1), **md2atxt**(1), **md2atxt.al**(5), **md2atxt.txt**(5)
